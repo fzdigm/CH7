@@ -73,57 +73,84 @@
         </form>
 
         <br /><br />
-        
+    <h2>What kind of music applications do you like using while studying or on the go?</h2>  
     
-     
+    <p>You can choose more than one music streaming application:</p>
     
-    What kind of music applications do you like using while studying or on the go?  
-    
-    You can choose more than one music streaming application:
-    
-    <!--  insert a “checkbox”  which looks like this:   <input type=”checkbox”>  You can use the exact example/code  on page 156 in your book  --> 
-    
+    <form action="">
+        <p>Please select your favorite music service(s):
+        <br />
+        <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+        <input type="checkbox" name="service" value="lastfm" /> last.fm
+        <input type="checkbox" name="service" value="spotify" /> Spotify
+        </p>
+    </form>
       
     
-    Favorite style of music? 
-    
-    <!--  use the radio buttons, exactly as it is written on page 155--> 
-    
+    <p>Favorite style of music?</p>
+
+    <form action="">
+        <p>Please select your favorite genre:</p>
+        
+        <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+        <input type="radio" name="genre" value="pop" /> Pop
+        <input type="radio" name="genre" value="jazz"> Jazz
+    </form>
      
-    
+    <br />
     <h2>Are you a MacOS, Windows, or Linux user?</h2> 
     
-    <p>As you browse the internet, which kind of computer OS are you using?</p>  
     
     <!--  insert a Drop Down List Box - you can use the exact code on page 157, just change the working from ipad, radio, computer to “Windows, MacOS, Linux” --> 
     
-     
+     <form action="">
+         <p>As you browse the internet, which kind of computer OS are you using?</p>
+         <select name="devices" >
+             <option value="Windows">Windows</option>
+             <option value="macos">MacOS</option>
+             <option value="linux">Linux”</option>
+         </select>
+     </form>
+     <br />
     
      
     
-    Add an image for your profile! 
+    <h2>Add an image for your profile!</h2> 
     
     <!--  insert image of self or  if you don't want to use a picture of yourself, use a generic image of a college student from “unsplash” and resize the image using height=”600” width=”600”  use similar code found on page 100--> 
     
+    <img src="images/dog.jpg" alt="Dog" width="600" height="600"><br />
      
+
+    <form action="" method="POST">
+        <h2>Upload your song in MP3 format:</h2>
+        <input type="file" name="user song" />
+        <br />
     
-    <!--  add file input box – same code on page 159 works--> 
-    
-     
+    </form>
+    <br />
     
     <h2>Contact?</h2> 
     
     <p>Please use the form below:</p> 
     
     <!-- use the exact code from page 164 in your book – make sure to change the 3 titles to “First Name” “Last Name” and “Email” --> 
-    
-     
+    <fieldset>
+        <legend>Contact Details</legend>
+        <label>First Name<br /><input type="text" name="First Name" /></label><br />
+        <label>Last Name<br /><input type="text" name="Last Name" /></label><br />
+        <label>Email<br /><input type="text" name="Email" /></label><br />
+    </fieldset>
+     <br />
     
     <h2>Set a date when you can visit the campus!</h2> 
     
     <!--  use the exact code found on page 166 --> 
-    
-
+    <form action="">
+        <label">Visit Date:</label>
+        <input type="date" name="" />
+        <input type="submit" value="Submit" />    
+    </form>
 
 </body>
 </html>
